@@ -1,0 +1,125 @@
+
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin:0px;
+}
+body {
+  font-family: system-ui;
+  margin: 0px;
+  // padding: 0px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.main {
+  background-size: cover;
+  width: 100%; 
+  height: 100%; 
+  object-fit:contain;
+  position: fixed;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: rgba(0, 0, 0, .2) !important;
+}
+
+.landingPageDialog {
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.landingPageDialog:hover {
+  color: rgb(202, 100, 6);
+}
+
+.mintingPageBtnHeader {
+  gap: 6px;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 0px;
+}
+.storyCard {
+  height:240px;
+  width: 190px !important;
+  background-color:#9B6F4C;
+  border-radius:20px;
+  display:flex;
+  align-items:center !important;
+  flex-direction:column;
+  .cardImg {
+    height:150px;
+    width:150px;
+    border-radius:75px;
+    background-color:yellow;
+    border:1px solid black;
+    margin: auto;
+}
+  .cardText {
+    margin-top:20px;
+    font-size:20px;
+    font-weight:500;
+    color:white;
+    text-align: center;
+  }
+}
+.slick-prev {
+  left: -5% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: -5% !important;
+  z-index: 1;
+}
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  width: 220px !important;
+}
+.slick-slider{
+  width: 73%;
+  margin: auto;
+  overflow: visible;
+}
+.faqs {
+  height:calc(100vh - 18rem);
+  margin:30px;
+  overflow-y: scroll;
+  margin-top: 0px;
+}
+.faqs::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+.backClr {
+  overflow:hidden;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+
