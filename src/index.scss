@@ -8,7 +8,8 @@ body,
 }
 
 *{
-  margin:0px;
+  margin:0;
+  padding: 0;
 }
 body {
   font-family: system-ui;
@@ -38,6 +39,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: white;
+  display: inline-grid;
 }
 
 .landingPageDialog:hover {
@@ -95,15 +97,13 @@ body {
   width: 220px !important;
 }
 .slick-slider{
-  width: 73%;
+  width: 65%;
   margin: auto;
   overflow: visible;
 }
 .faqs {
   height:calc(100vh - 18rem);
-  margin:30px;
   overflow-y: scroll;
-  margin-top: 0px;
 }
 .faqs::-webkit-scrollbar {
   display: none;

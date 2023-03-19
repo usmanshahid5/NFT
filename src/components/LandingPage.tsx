@@ -12,12 +12,18 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ProfileImage from '../components/assets/ProfilePhoto.jpeg';
-import Slider              from "react-slick"
+import Slider              from "react-slick";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import plantImg from "../components/assets/coin.png";
-import rolling from "../components/assets/rolling.png"
+import rolling from "../components/assets/rollingTwo.png"
 
 import dayVideo from "../components/assets/day.mp4";
 import afternoonVideo from "../components/assets/afternoon.mp4";
@@ -34,7 +40,8 @@ export default function LandingPage() {
   const [state, setState] = useState({
     isOpenDialog: false,
     pageName: 'LandingPage',
-    storyDialog:false
+    storyDialog:false,
+    faqOpen : false
   })
   let settings = {
     dots: true,
@@ -76,20 +83,12 @@ export default function LandingPage() {
   const Faqs = () => {
     return <div>
       <div>
-        <div style={ { height: "100vh", width: "100vw" } }>
+        <div>
           <div
             style={{
-              height:"80vh",
-              width:"70%",
-              backgroundColor:"rgba(0,0,0,.4)",
               margin:"auto",
-              marginTop:"3%",
               borderRadius:"10px"
             }}>
-            <div style={{display:"flex", alignItems:"center", margin:"30px", gap:"10px", marginBottom:"0px", paddingTop:"30px"}}>
-              <p style={{width:"5%", fontSize:"34px", color:"white", display:"contents"}}>FAQ's</p>
-              <hr style={{width:"70%", opacity:".4", marginLeft:"30px"}}/>
-            </div>
             <div className="faqs">
               <div>
                 <p style={{color:"#FFDCBB", fontSize:"24px"}}>1- Lorem Ipsum is simply dummy text of the printing?</p>
@@ -132,7 +131,8 @@ export default function LandingPage() {
       backgroundColor:"black",
       color:"white",
       position:"absolute",
-      width:"100%"
+      width:"100%",
+      marginTop:"8%"
     }}>
       <div style={{
         display:"flex",
@@ -230,10 +230,10 @@ export default function LandingPage() {
       <div>
         <div style={{margin:"50px", marginTop:"5%"}}>
           <div style={ { display: "flex", alignItems: "center", color: "white", gap: "30px", width:"100%" } }>
-            <h1 style={ { width: "11%", fontSize: "44px", fontWeight:"400" } }>Stories</h1>
+            <h1 style={ { width: "8%", fontSize: "34px", fontWeight:"400" } }>Stories</h1>
             <hr style={ { width: "70%", opacity:".7" } }/>
           </div>
-          <div style={{width:"100%"}}>
+          <div style={{width:"100%", marginTop:"10px"}}>
             <p style={ { fontSize: "20px", fontWeight: "100", color: "white", width:"70%", opacity:".7" } }>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -276,9 +276,9 @@ export default function LandingPage() {
         <source src={ currentTime >= 8 && currentTime <= 12 ?
           dayVideo : currentTime > 12 && currentTime <= 18 ? 
           afternoonVideo : nightVideo } type="video/mp4"/> </video>
-      <Parallax ref={parallax} pages={4.2} style={{background:"rgba(0,0,0,0.6)"}}>
-
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#6E423E' }} />
+      <Parallax ref={parallax} pages={state.faqOpen?4.07 : 3.4} style={{background:"rgba(0,0,0,0.6)"}}>
+{/* ______________________ */}
+        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: 'rgba(0,0,0,.7)', filter:"blur(6px)" }} />
         <ParallaxLayer offset={2} speed={1} style={{ background: 'transparent' }} />
 
         <ParallaxLayer
@@ -297,28 +297,28 @@ export default function LandingPage() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+          {/* <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+          <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '15%' }} /> */}
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
+          {/* <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
+          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '40%' }} /> */}
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
+          {/* <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
+          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '75%' }} /> */}
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={plantImg} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
-          <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+          {/* <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '60%' }} /> */}
+          {/* <img src={plantImg} style={{ display: 'block', width: '25%', marginLeft: '30%' }} /> */}
+          {/* <img src={plantImg} style={{ display: 'block', width: '10%', marginLeft: '80%' }} /> */}
         </ParallaxLayer>
 
         <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.2 }}>
-          <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
+          {/* <img src={plantImg} style={{ display: 'block', width: '20%', marginLeft: '5%' }} /> */}
           <img src={plantImg} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
@@ -347,9 +347,9 @@ export default function LandingPage() {
             color: "white",
             width: "92%",
             alignItems: "center",
-            marginTop: "-42%",
             position:"fixed",
-            zIndex:"1"
+            zIndex:"1",
+            top:"30px"
           } }>
             <p style={ { fontSize: "25px", fontWeight: 600 } }>Logo</p>
             <div style={{
@@ -361,8 +361,12 @@ export default function LandingPage() {
               fontSize:"16px",
               fontWeight:"200"}}>
               <p className={ 'landingPageDialog' }>Option</p>
-              <p className={ 'landingPageDialog' }>Option</p>
-              <p className={ 'landingPageDialog' }>Option</p>
+              <Link to="/Minting">
+              <p className={ 'landingPageDialog' }>Minting</p>
+              </Link>
+              <Link to="/Lottery">
+              <p className={ 'landingPageDialog' }>Lottery</p>
+              </Link>
               <img
                 style={ { height: "44px", width: "44px", borderRadius: "22px", border: "1px solid white" } }
                 src={ ProfileImage } alt="Profile Photo"/>
@@ -430,7 +434,7 @@ export default function LandingPage() {
                    </Link>
                    <Link to="/Staking">
                 <p className={ 'landingPageDialog' }
-                   onClick={ () => setState({ ...state, pageName: 'Staking', isOpenDialog: false }) }>Staking</p>
+                   onClick={ () => setState({ ...state, pageName: 'Staking', isOpenDialog: false }) }>Staking <span style={{color:"orange", fontSize:"14px"}}>( Coming Soon! )</span></p>
                    </Link>
                 <p className={ 'landingPageDialog' }>Option</p>
 
@@ -452,23 +456,31 @@ export default function LandingPage() {
 
         <ParallaxLayer
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginTop:"92%"
+            marginTop: "92%"
           }}>
-          <Faqs/>
+             <Accordion style={{width:"70%", margin:"auto", backgroundColor:"rgba(0,0,0,.4)"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+          onClick={()=>setState({...state, faqOpen : !state.faqOpen})}
+        >
+          <Typography style={{fontSize:"30px", color:"white"}}>FAQ</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <Faqs/>
+        </AccordionDetails>
+      </Accordion>
         </ParallaxLayer>
-
-
-
         <ParallaxLayer
           offset={1}
           speed={-0}
           style={{
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop:"90%"
+            marginTop:!state.faqOpen ? "51%" : "83%",
+            height:"100vh",
+            transition:"margin-top 0.5s"
           }}>
           <div style={{display:"flex", alignItems:"center", marginLeft:"10%", gap:"10px"}}>
             <p style={{width:"14%", fontSize:"34px", color:"white"}}>Our Team</p>
@@ -477,7 +489,6 @@ export default function LandingPage() {
           <div style={{width:"100%"}}>
             <p style={ {
               marginLeft:"10%",
-              marginTop:"20px",
               fontSize: "20px", fontWeight: "100", color: "white", width:"70%", opacity:".7" } }>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -537,20 +548,21 @@ export default function LandingPage() {
             <p style={{fontSize:"16px", color:"white"}}>Name</p>
           </div>
           </div>
+          <Footer/>
         </ParallaxLayer>
 
 
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={2}
           speed={-0}
           style={{
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop:"84%"
+            // marginTop:"84%"
           }}>
           <Footer/>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
     </div>
   )

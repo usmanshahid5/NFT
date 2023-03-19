@@ -58,7 +58,7 @@ const OtherPage = () => {
               width: "92%",
               alignItems: "center",
               margin: "auto",
-              marginTop: "20px"
+              marginTop: "30px"
             } }>
               <Link to="/">
                 <p style={ { fontSize: "25px", fontWeight: 600, color:"white" } }>Logo</p>
