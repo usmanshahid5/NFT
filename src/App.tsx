@@ -11,9 +11,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={ <LandingPage/> } />
-        <Route path="/Staking" exact element={ <Staking/> } />
-        <Route path="/Lottery" exact element={ <OtherPage/> } />
-        <Route path="/Minting" exact element={ <MintingPageNew/> } />
+        <Route path="/Staking"  element={ <Staking/> } />
+        <Route path="/Lottery"  element={ <OtherPage/> } />
+        <Route path="/Minting"  element={ <MintingPageNew/> } />
       </Routes>
     </Router>
   )

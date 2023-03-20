@@ -11,7 +11,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ProfileImage from '../components/assets/ProfilePhoto.jpeg';
+import ProfileImage from '../components/assets/ProfilePhoto.png';
 import Slider              from "react-slick";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -171,12 +171,12 @@ export default function LandingPage() {
                 <p>+01-232-222111333</p>
               </div>
               <div style={{display:"flex", gap:"10px", alignItems:"center", marginTop:"20px"}}>
-                <EmailIcon style={{height:"18px", width:"18px", color:"orange"}} color={"orange"}/>
-                <p>usman@gmail.com</p>
+                <EmailIcon style={{height:"18px", width:"18px", color:"orange"}}/>
+                <p style={{color:"white"}}>usman@gmail.com</p>
               </div>
               <div style={{display:"flex", gap:"10px", alignItems:"center", marginTop:"20px"}}>
-                <LanguageIcon style={{height:"18px", width:"18px", color:"orange"}} color={"white"}/>
-                <p>usman@gmail.com</p>
+                <LanguageIcon style={{height:"18px", width:"18px", color:"orange"}}/>
+                <p style={{color:"white"}}>usman@gmail.com</p>
               </div>
             </div>
           </div>

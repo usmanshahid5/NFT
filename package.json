@@ -1,5 +1,6 @@
 {
   "name": "reactspring",
+  "homepage": "https://usmanshahid5.github.io/NFT",
   "description": "Showcasing a basic use of vertical parallax",
   "keywords": [
     "Parallax",
@@ -16,6 +17,7 @@
     "@react-spring/parallax": "*",
     "@react-spring/web": "*",
     "aos": "^2.3.4",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
@@ -29,6 +31,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -39,8 +43,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-slick": "^0.23.10",
     "file-loader": "^6.2.0",
     "typescript": "^4.9.5"
   }

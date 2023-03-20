@@ -1,8 +1,8 @@
 import React from 'react';
 
-const StakingNew = (props) => {
+const StakingNew = () => {
   return (
-    <div style={{display:props.isDialogOpen ? "none" : ""}}>
+    <div>
         <div style={ { color: "white", width: "100%", textAlign: "center", marginTop: "12%" } }>
           <p style={ { fontSize: "28px", color: "#FFB039" } }>
             Staking</p>

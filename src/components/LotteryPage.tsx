@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProfileImage        from '../components/assets/ProfilePhoto.jpeg';
+import ProfileImage        from '../components/assets/ProfilePhoto.png';
 import Dialog              from '@mui/material/Dialog';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -98,10 +98,9 @@ const OtherPage = () => {
             {
               state.pageName === "Lottery" ?
                 <div>
-                <LotteryPageNew isDialogOpen = { state.isOpenDialog } />
+                <LotteryPageNew />
                 </div>
                 :
-                state.pageName === "Staking" ? <StakingPage/> :
                   <div style={ {
                     color: "white",
                     width: "100%",
@@ -132,11 +131,7 @@ const OtherPage = () => {
                       the
                       industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                       type</p>
-                    {
-                      state.pageName !== 'LandingPage' ?
-                        <MintingPage/> : null
-                    }
-
+                   
                     <button onClick={ () => setState({ ...state, isOpenDialog: true }) } style={ {
                       border: "0px",
                       marginTop: "60px",

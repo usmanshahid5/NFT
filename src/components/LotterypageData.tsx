@@ -1,21 +1,21 @@
 import React from 'react';
-import Countdown from 'react-countdown';
+// import Countdown from 'react-countdown';
 
-const LotteryPageNew = ( props ) => {
-  const Completionist = () => <span>You are good to go!</span>
-  const renderer = ({ hours, minutes, seconds, completed }) => {
-    if (completed) {
-      // Render a completed state
-      return <Completionist />;
-    } else {
-      // Render a countdown
-      return <span>{hours}:{minutes}:{seconds}</span>;
-    }
-  };
-  console.log(Date.now(), 88888888)
+const LotteryPageNew = () => {
+  // const Completionist = () => <span>You are good to go!</span>
+  // let completed: boolean = true;
+  // const renderer = ({ hours, minutes, seconds, completed }) => {
+  //   if (completed) {
+  //     // Render a completed state
+  //     return <Completionist />;
+  //   } else {
+  //     // Render a countdown
+  //     return <span>{hours}:{minutes}:{seconds}</span>;
+  //   }
+  // };
   return (
     <div>
-      <div style={ { display : props.isDialogOpen ? "none": "", color: "white", width: "100%", textAlign: "center", marginTop: "6%" } }>
+      <div style={ { color: "white", width: "100%", textAlign: "center", marginTop: "6%" } }>
         <p style={ { fontSize: "22px", opacity: .8 } }>
           Get a chance to win a
         </p>
@@ -25,10 +25,10 @@ const LotteryPageNew = ( props ) => {
 
         <h1 className='LotteryTime' style={ { fontSize: "80px", fontWeight: "600", margin: '10px' } }>
           {/*22:22:22*/}
-          <Countdown
+          {/* <Countdown
             date={Date.now() + 1000000}
             renderer={renderer}
-          />
+          /> */}
         </h1>
         <h1 style={ { fontSize: "22px", fontWeight: "400", margin: '10px', opacity: .8 } }>
           Time Remaining

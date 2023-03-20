@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import ProfileImage from '../components/assets/ProfilePhoto.jpeg';
+import React, { useState } from 'react';
+import ProfileImage from '../components/assets/ProfilePhoto.png';
 import Dialog              from '@mui/material/Dialog';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
