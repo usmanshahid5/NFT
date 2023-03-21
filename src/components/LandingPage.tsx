@@ -90,35 +90,89 @@ export default function LandingPage() {
               borderRadius:"10px"
             }}>
             <div className="faqs">
-              <div>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>1- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
-              <div style={{marginTop:"22px"}}>
-                <p style={{color:"#FFDCBB", fontSize:"24px"}}>2- Lorem Ipsum is simply dummy text of the printing?</p>
-                <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"6px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
-              </div>
 
+
+              <Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>1- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion>
+
+
+      <Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>2- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion><Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>3- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion><Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>4- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion><Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>5- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion><Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>6- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion><Accordion style={{margin:"auto", background:"transparent"}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{color:"white"}} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography style={{fontSize:"24px", color:"#FFDCBB"}}>7- Lorem Ipsum is simply dummy text of the printing?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        <p style={{color:"white", fontSize:"20px", marginLeft:"29px", marginTop:"-16px", opacity:".8"}}>     Lorem Ipsum is simply dummy</p>
+        </AccordionDetails>
+      </Accordion>
             </div>
           </div>
         </div>
