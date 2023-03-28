@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NFT/static/css/main.090977c8.css",
-    "main.js": "/NFT/static/js/main.9d9e44cb.js",
+    "main.js": "/NFT/static/js/main.e51c3bb1.js",
     "static/media/day.mp4": "/NFT/static/media/day.50ae291c893d2b8f5c59.mp4",
     "static/media/afternoon.mp4": "/NFT/static/media/afternoon.d3884b9a6918a37562d9.mp4",
     "static/media/thumbnail.png": "/NFT/static/media/thumbnail.1fa76dd0e0163978e8d0.png",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/NFT/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/NFT/index.html",
     "main.090977c8.css.map": "/NFT/static/css/main.090977c8.css.map",
-    "main.9d9e44cb.js.map": "/NFT/static/js/main.9d9e44cb.js.map"
+    "main.e51c3bb1.js.map": "/NFT/static/js/main.e51c3bb1.js.map"
   },
   "entrypoints": [
     "static/css/main.090977c8.css",
-    "static/js/main.9d9e44cb.js"
+    "static/js/main.e51c3bb1.js"
   ]
 }
